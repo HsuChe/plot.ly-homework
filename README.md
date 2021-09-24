@@ -14,7 +14,7 @@
 
 ## About The Project
 
-![hero image](https://github.com/HsuChe/python-api-challenge/blob/69e9ff67cfc7c09cf6aacde6f124853f4e0c2b02/Images/tree-832079_1280.jpg)
+![hero image](images/bacteria-163711_1280.jpg)
 
 Data were collected from the belly button samples extracted from the participants and the bacteria id and population is documented in a JSON file. We will be reading from the JSON file to construct the sample collected from each individual
 
@@ -138,7 +138,7 @@ When the dropdown menu is changed, we will pass the current selected ID to the c
     };
   ```
 
-```sh
+    ```sh
     let graphBubbleChart = (values, labelid, labels, curOption) => {
         // setup the x and y intercepts to be graphed
         let traceCir = {
@@ -214,4 +214,4 @@ When the dropdown menu is changed, we will pass the current selected ID to the c
             }
             Plotly.newPlot('gauge', traceGauge, layoutGauge)
         };
-```
+    ```
