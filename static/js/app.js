@@ -38,7 +38,7 @@ let chartBuildInit = (curOption)  => {
         // console.log(samples);
         metadataPanel(metadata);
         graphOtu(sampleValues,labelIds,labels,curOption);
-        graphTraceGaugeChart(metadata, curOption)
+        graphTraceGaugeChart(metadata, curOption);
         // console.log(label_labels);
         // console.log(sample_values);
     })
@@ -59,9 +59,9 @@ let metadataPanel = (metadata) => {
 
 let graphOtu = (sampleValues,labelIds,labels,curOption) => {
     let topValues = sampleValues.slice(0,10).reverse()
-    let topLablesId = labelIds.slice(0,10).reverse()
-    graphTopOtu(topValues, topLablesId,curOption)
-    graphBubbleChart(topValues, topLablesId,labels,curOption)
+    let topLabelsId = labelIds.slice(0,10).reverse()
+    graphTopOtu(topValues, topLabelsId,curOption)
+    graphBubbleChart(topValues, topLabelsId,labels,curOption)
 };
 
 let graphTopOtu = (values, labelid, curOption) => {
@@ -162,5 +162,3 @@ let graphTopOtu = (values, labelid, curOption) => {
             }
             Plotly.newPlot('gauge', traceGauge, layoutGauge)
         };
-
-init()
