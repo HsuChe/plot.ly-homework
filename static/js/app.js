@@ -162,3 +162,6 @@ let graphTopOtu = (values, labelid, curOption) => {
             }
             Plotly.newPlot('gauge', traceGauge, layoutGauge)
         };
+
+
+init()
